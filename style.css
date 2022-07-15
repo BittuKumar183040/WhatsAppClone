@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, Ubuntu, Cantarell, "Fira Sans", sans-serif;;
+}
+body{
+    
+    background-image: linear-gradient(180deg, #00A884 25%,#fff 0%);
+    background-repeat: no-repeat;
+}
+
+
+/* mid seciton */
+.wrapper{
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    left: 50%;
+    top:135px;
+    transform: translateX(-50%);
+    width:900px;
+    background-color: #fff;
+    margin-bottom: 250px;
+}
+nav{
+    position: absolute;
+    left:-20px;
+    top:-115px;
+    cursor: pointer;
+}
+.whatsappLogo{
+    display: flex;
+    justify-content: content;
+    align-items: center;
+}
+.whatsappLogo img{
+    height: 50px;
+    width: 50px;
+    padding:3px;
+    filter: brightness(2);
+}
+.logoText{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 10px;
+}
+.container, .videoSection{
+    position: relative;
+}
+
+.container{
+    padding:60px;
+}
+.container_flex{
+    display:flex;
+    justify-content: space-between;
+}
+.heading{
+    font-size: 28px;
+    font-weight: 300;
+    color:#41525d;
+    margin-bottom: 45px;
+}
+.heading::after{
+    content:":";
+}
+.instruction_Steps{
+    list-style-position: inside;
+    line-height: 40px;
+    font-size: 18px;
+    color: #3b4a54;
+    font-weight: 400;
+}
+.instruction_Steps span{
+    font-weight: 550;
+}
+.instruction_Steps p{
+    display:inline;
+}
+.instruction_Steps svg{
+    transform:translateY(5px)
+}
+.helpLink{
+    text-decoration: none;
+    color: #008069;
+    font-size: 14px;
+    display:block;
+    margin:80px 0 10px 0;
+}
+.barCode img{
+    height:250px;
+}
+.videoSection{
+    background-color:#F9F9FA;
+    display:flex;
+    justify-content: center;
+    padding:50px;
+    border-radius:0 0 5px 5px;
+}
+@media screen and (max-width: 950px) {
+    
+    .container_flex{
+        flex-direction: column;
+    }
+    nav{
+        left:0px;
+        top:-115px;
+    }
+    .barCode{
+        text-align: center;
+    }
+    .barCode img{
+        height:300px;
+    }
+    .wrapper{
+        width:700px;
+    }
+    .helpLink{
+        
+        margin:80px 0 80px 0;
+    }
+    .videoSection{
+        padding:50px 0px;
+    }
+  }
+@media screen and (max-width: 730px) {
+    .whatsappLogo img{
+        height: 35px;
+        width: 35px;
+    }
+    .logoText{
+        font-size: 11px;
+        padding-left: 5px;
+    }
+    .wrapper{
+        width:95%;
+    }
+    .heading{
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .container{
+        padding:30px;
+    }
+    .helpLink{
+        margin:80px 0 40px 0;
+    }
+    .instruction_Steps{
+        font-size: 13px;
+    }
+    .barCode img{
+        width:40vw;
+        height:auto;
+    }
+    .videoSection{
+        padding: 0;
+    }
+    .videoSection video{
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+    }
+  }
